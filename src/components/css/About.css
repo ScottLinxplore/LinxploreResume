@@ -1,0 +1,454 @@
+/* About.css */
+
+.about-section {
+  scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+  padding: 9rem 2rem;
+  background: radial-gradient(
+    rgba(49, 101, 104, 0.31) 5%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  width: 710px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.8;
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background: transparent;
+  width: 430px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+@media screen and (min-width: 601px) {
+  .flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-front {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.flip-back {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  transform: rotateY(180deg);
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-sub {
+  font-size: 1rem;
+  color: #6fffe9;
+}
+
+.moodBoard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  grid-auto-flow: dense;
+  max-width: 1000px;
+  margin: 3rem auto 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.mood-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.mood-item:hover {
+  transform: scale(1.05);
+}
+
+/* 不規則尺寸：每幾張圖改變比例 */
+.mood-item:nth-child(3n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.mood-item:nth-child(4n) {
+  grid-row: span 2;
+}
+
+.mood-item:nth-child(5n) {
+  grid-column: span 2;
+}
+
+/* Light Mode：背景改亮色，文字改深色 */
+body.light-mode .about-section {
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.3) 5%,
+    rgba(255, 255, 255, 0.7) 70%
+  );
+  color: #001219;
+}
+
+/* Light Mode：標題漸層調整 */
+body.light-mode .about-title {
+  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light Mode：文字改深灰 */
+body.light-mode .about-description {
+  color: #333;
+}
+
+/* Light Mode：卡片正面背景與文字 */
+body.light-mode .flip-front {
+  background-color: #a6d2fe;
+  color: #001219;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Light Mode：卡片背面背景與文字 */
+body.light-mode .flip-back {
+  background: linear-gradient(135deg, #ffffff, #ffe6e6);
+  color: #161616;
+}
+
+/* Light Mode：次標題改藍色系 */
+body.light-mode .card-sub {
+  color: #003e89;
+}
+
+/* Light Mode：moodBoard 圖片加亮陰影 */
+body.light-mode .mood-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode：背景亮、卡片淺色、文字深色 */
+body.light-mode .carousel-section {
+  background: radial-gradient(
+    rgba(200, 250, 250, 0.2) 5%,
+    rgba(255, 255, 255, 0.8) 70%
+  );
+}
+
+body.light-mode .carousel-title {
+  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .carousel-card {
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  color: #001219;
+}
+
+body.light-mode .carousel-card p {
+  color: #333;
+}
+
+body.light-mode .carousel-btn {
+  color: #666;
+}
+
+body.light-mode .carousel-btn:hover {
+  color: #000;
+}
+
+body.light-mode .project-link {
+  color: #4f70d1;
+}
+
+body.light-mode .project-link:hover {
+  color: #2c307f;
+}
+
+/* 圖片略加亮 */
+body.light-mode .carousel-card img {
+  filter: brightness(1.05);
+}
+
+/* 滑順漸變效果 */
+.carousel-section,
+.carousel-title,
+.carousel-card,
+.carousel-card p,
+.carousel-btn,
+.project-link {
+  transition: background-color 0.5s ease, color 0.5s ease, filter 0.5s ease;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+@media screen and (max-width: 410px) {
+  .about-section {
+    scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+    padding: 2rem 2rem;
+    background: radial-gradient(
+      rgba(49, 101, 104, 0.31) 5%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    color: #fff;
+    text-align: center;
+  }
+  body.light-mode .about-section {
+    scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+    padding: 2rem 2rem;
+    background: radial-gradient(
+      rgba(49, 101, 104, 0.31) 5%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .about-description {
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.8;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+  }
+  .flip-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  .flip-back > p {
+    width: 300px;
+    max-width: 500px;
+    /* background-color: #003e89; */
+  }
+  .card-grid {
+    gap: 2rem;
+  }
+
+  .moodBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 40px;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .mood-item:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .mood-item:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .mood-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(7) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .mood-item:nth-child(8) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .mood-item {
+    transition: transform 0.005s ease;
+    will-change: transform;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 411px) {
+  .about-section {
+    scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+    padding: 2rem 2rem;
+    background: radial-gradient(
+      rgba(49, 101, 104, 0.31) 5%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    color: #fff;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+    width: 100vw;
+    max-width: 90vw;
+    margin: 0 auto 3rem auto;
+    line-height: 1.8;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+  }
+  .flip-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  .flip-back > p {
+    width: 300px;
+    max-width: 500px;
+    /* background-color: #003e89; */
+  }
+  .card-grid {
+    gap: 2rem;
+  }
+
+  .moodBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 40px;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .mood-item:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .mood-item:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .mood-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .mood-item:nth-child(7) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .mood-item:nth-child(8) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .mood-item {
+    transition: transform 0.005s ease;
+    will-change: transform;
+  }
+}

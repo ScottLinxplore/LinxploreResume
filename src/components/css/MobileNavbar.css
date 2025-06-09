@@ -1,0 +1,142 @@
+/* src/components/css/MobileNavbar.css */
+
+.mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: #001219;
+    z-index: 10000;
+    border-radius: 0 0 35px 0;
+  }
+
+  .mobile-navbar-top {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .burger-icon {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .MNlogo {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  body.light-mode .MNlogo {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: #001219ea;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6rem 2rem 2rem 2rem;
+    z-index: 1000;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    touch-action: none;
+  }
+
+  .mobile-drawer.open {
+    transform: translateX(0);
+    position: sticky;
+    /* ✅ 滿版 */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+  }
+
+  .mobile-drawer a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .mobile-contact button {
+    background-color: #fcd058;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  /* 淺色模式支援 */
+  body.light-mode .mobile-navbar,
+  body.light-mode .mobile-drawer {
+    background-color: #ffffffe5;
+  }
+
+  body.light-mode .mobile-drawer a {
+    color: #111;
+  }
+
+  body.light-mode .burger-icon {
+    color: #111;
+  }
+  .drawer-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  body.light-mode .close-icon {
+    color: #111;
+  }
+  body.light-mode .drawer-header {
+    color: #111;
+  }
+  .none {
+    display: none;
+  }
+}

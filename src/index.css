@@ -1,0 +1,101 @@
+/* Reset 預設空白 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* background-color: #001219; */
+}
+
+/* === 深色模式 === */
+body.dark-mode,
+body.dark-mode #root {
+  background-color: #001219;
+  color: #f0f0f0;
+}
+
+body.dark-mode section {
+  background-color: #001219;
+  color: #f5f5f5;
+}
+
+body.dark-mode .navbarSection {
+  background-color: #001219;
+  color: #fff;
+}
+
+body.dark-mode .flip-back {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  color: #ccc;
+}
+
+body.dark-mode .about-title,
+body.dark-mode .skills-title,
+body.dark-mode .experience-title {
+  background: linear-gradient(90deg, #4afff0, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === 淺色模式 === */
+body.light-mode,
+body.light-mode #root {
+  background-color: white;
+  color: #222;
+}
+
+body.light-mode section {
+  background-color: #fff;
+  color: #222;
+}
+
+body.light-mode .navbarSection {
+  background-color: #ffffff;
+  color: #111;
+}
+
+body.light-mode .flip-back {
+  background: linear-gradient(135deg, #e8e8e8, #ffffff);
+  color: #333;
+}
+
+body.light-mode .about-title,
+body.light-mode .skills-title,
+body.light-mode .experience-title,
+body.light-mode .carousel-title {
+  background: linear-gradient(90deg, #003049, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 為整體背景與文字設置平滑切換 */
+body,
+body section,
+body .about-title,
+body .skills-title,
+body .hero-left,
+body .hero-title,
+body .hero-content,
+body .experience-title,
+body .card-sub,
+body .flip-front,
+body .flip-back,
+body .skill-pill,
+body .navbarSection,
+body .hero-section,
+body .carousel-section,
+body .hero-right {
+  transition: all 0.5s ease-in-out;
+}

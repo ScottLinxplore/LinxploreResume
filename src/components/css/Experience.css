@@ -1,0 +1,201 @@
+.experience-section {
+  padding: 2rem 2rem;
+  color: #fff;
+  /* margin: 4rem 0 1rem 0; */
+  padding: 4rem 0 1rem 0;
+  scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+}
+
+.experience-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+.timeline-group {
+  max-width: 900px;
+  margin: 5rem auto;
+}
+
+.timeline-subtitle {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+  color: #fff;
+  border-left: 4px solid #fcd058;
+  padding-left: 1rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #fcd058;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.1rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fcd058;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  flex: 1;
+  text-align: left;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.timeline-content p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 26rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light Mode：經歷區背景與文字色 */
+body.light-mode .experience-section {
+  background: radial-gradient(
+    rgba(240, 240, 240, 0.4) 0%,
+    #ffffff 100% /* 加底色 */
+  );
+  color: #222;
+}
+
+/* Light Mode：標題漸層 */
+body.light-mode .experience-title {
+  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light Mode：小標題 */
+body.light-mode .timeline-subtitle {
+  color: #2f2f2f;
+  border-left-color: #ff5b5b;
+}
+
+/* Light Mode：時間軸主線 */
+body.light-mode .timeline {
+  border-left-color: #ff5b5b;
+}
+
+/* Light Mode：時間點圓點 */
+body.light-mode .timeline-dot {
+  background-color: #ff5b5b;
+}
+
+/* Light Mode：內容文字 */
+body.light-mode .timeline-content h3 {
+  color: #001219;
+}
+
+body.light-mode .timeline-content p,
+body.light-mode .timeline-period {
+  color: #444;
+}
+.timeline-period {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+@media screen and (max-width: 600px) {
+  .experience-section {
+    padding: 3rem 1.5rem;
+    scroll-margin-top: 80px;
+  }
+
+  .experience-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-group {
+    margin: 3rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 1.1rem;
+    margin: 2rem 0 1rem;
+    padding-left: 0.75rem;
+  }
+
+  .timeline {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #fcd058;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  .timeline-dot {
+    left: -0.7rem;
+    top: 0.2rem;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    width: 100%;
+    color: #ccc;
+  }
+
+  p {
+    width: 100%;
+  }
+}

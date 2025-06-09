@@ -1,0 +1,143 @@
+/* Skills.css */
+
+.skills-section {
+  padding: rem 2rem;
+  background: radial-gradient(
+    rgba(49, 101, 104, 0.31) 5%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  text-align: center;
+  color: white;
+  scroll-margin-top: 400px; /* 根據 navbar 高度調整 */
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+.filterDiv {
+  margin-bottom: 3rem;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.filter-label {
+  margin-left: 2rem;
+}
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-pill {
+  background-color: #7fffe8;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  user-select: none;
+}
+
+.skill-pill:hover {
+  transform: scale(1.05);
+  background-color: #56f0dc;
+}
+
+/* Light Mode：整體區塊背景與文字色 */
+body.light-mode .skills-section {
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.3) 5%,
+    rgba(255, 255, 255, 0.7) 70%
+  );
+  color: #001219;
+}
+
+/* Light Mode：標題漸層 */
+body.light-mode .skills-title {
+  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light Mode：技能 pill 元素的顏色調整 */
+body.light-mode .skill-pill {
+  background-color: #52a6e2;
+  color: #2f2f2f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .skill-pill:hover {
+  background-color: #ffbfbf;
+}
+
+/* Light Mode：checkbox 陰影或樣式微調（選用） */
+body.light-mode input[type="checkbox"] {
+  accent-color: #ff9898;
+}
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+@media screen and (max-width: 420px) {
+  .skills-section {
+    margin: 2rem;
+  }
+  body.light-mode .skills-section {
+    margin: 2rem;
+    background-color: white;
+  }
+  .filter-label {
+    margin-left: 1rem;
+  }
+  .filterDiv > span {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 420px) {
+  .skills-section {
+    margin: 2rem;
+  }
+  body.light-mode .skills-section {
+    margin: 2rem;
+    background-color: white;
+  }
+  .filter-label {
+    margin-left: 1.5rem;
+  }
+}

@@ -1,0 +1,175 @@
+.carousel-section {
+  padding: 4rem 2rem;
+  /* background: #f9f9f9; */
+  text-align: center;
+  scroll-margin-top: 100px; /* 根據 navbar 高度調整 */
+}
+
+.carousel-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: linear-gradient(90deg, #4afff0 30%, #ffffff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.carousel-card {
+  width: 900px;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: left;
+  display: flex;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-card img {
+  width: 18rem;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.carousel-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  display: inline-block;
+  color: #000;
+}
+
+.carousel-card p {
+  font-size: 0.95rem;
+  color: #555;
+  width: 30rem;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.carousel-btn:hover {
+  color: #000;
+}
+
+.carousel-btn.left {
+  position: relative;
+  left: -1rem;
+}
+
+.carousel-btn.right {
+  position: relative;
+  right: -1rem;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4f70d1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #2c307f;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+@media screen and (max-width: 600px) {
+  .carousel-section {
+    margin: 1rem;
+    padding: 0 2rem;
+    scroll-margin-top: 80px;
+  }
+
+  .carousel-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .carousel-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .carousel-card h3 {
+    font-size: 1.1rem;
+    color: #000;
+    margin: 0.3rem 0;
+  }
+
+  .carousel-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    width: 100%;
+  }
+
+  .project-link {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .carousel-btn {
+    font-size: 2rem;
+    color: #777;
+  }
+
+  .carousel-btn.left,
+  .carousel-btn.right {
+    position: static;
+    transform: rotate(90deg);
+    color: #777;
+    font-size: 4rem;
+    padding: 0;
+  }
+}

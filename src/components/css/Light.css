@@ -1,0 +1,206 @@
+.LightSwitcherSection {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  z-index: 9999;
+}
+body.light-mode .LightSwitcherSection {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0);
+}
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.toggle-wrapper input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 60px;
+  height: 32px;
+  background-color: #444;
+  border-radius: 9999px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* 開啟 dark mode 時向右移動 */
+.toggle-wrapper input:checked + .toggle-slider::before {
+  transform: translateX(28px);
+}
+
+.toggle-wrapper input:checked + .toggle-slider {
+  background-color: #00e4dc;
+}
+
+.toggle-label {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+body.light-mode .toggle-label {
+  color: rgb(33, 33, 33);
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+/* 11111 */
+@media screen and (max-width: 360px) {
+  .LightSwitcherSection {
+    top: -8vh;
+    left: 11vw;
+    position: relative;
+    width: 30vw;
+  }
+  .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 15vw;
+    width: 50vw;
+  }
+  body.light-mode .LightSwitcherSection {
+    top: -55vh;
+    position: absolute;
+    left: 1.7rem;
+  }
+  body.light-mode .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 57rem;
+    left: 15vw;
+  }
+  .toggle-label {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 414px) and (min-width: 381px) {
+  .LightSwitcherSection {
+    top: -8vh;
+    left: 11vw;
+    position: relative;
+    width: 30vw;
+  }
+  .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 15vw;
+    width: 50vw;
+  }
+  body.light-mode .LightSwitcherSection {
+    top: -30vh;
+    position: absolute;
+    left: 1.5rem;
+  }
+  body.light-mode .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 57rem;
+    left: 15vw;
+  }
+  .toggle-label {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 361px) {
+  .LightSwitcherSection {
+    top: -8vh;
+    left: 11vw;
+    position: relative;
+    width: 30vw;
+  }
+  .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 15vw;
+    width: 50vw;
+  }
+  body.light-mode .LightSwitcherSection {
+    top: -55vh;
+    position: absolute;
+    left: 1.5rem;
+  }
+  body.light-mode .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 57rem;
+    left: 15vw;
+  }
+  .toggle-label {
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  /* CSS rules for screens between 400px and 600px */
+  .LightSwitcherSection {
+    top: -16vh;
+    left: 11vw;
+    position: relative;
+    width: 30vw;
+  }
+  .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    left: 15vw;
+    width: 50vw;
+  }
+  body.light-mode .LightSwitcherSection {
+    top: -20rem;
+    position: absolute;
+    left: 8vw;
+  }
+  body.light-mode .toggle-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    top: 57rem;
+    left: 15vw;
+  }
+  .toggle-label {
+    width: 6rem;
+  }
+}

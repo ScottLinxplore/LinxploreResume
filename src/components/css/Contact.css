@@ -1,0 +1,86 @@
+.contact-footer {
+  padding: 3rem 2rem;
+  background-color: #002d43;
+  color: #f5f5f5;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4afff0, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item span {
+  font-weight: 600;
+}
+
+.contact-item a {
+  color: #4afff0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-item a:hover {
+  color: #00e3d8;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 1rem;
+  position: relative;
+  left: 24%;
+}
+
+/* Light mode */
+body.light-mode .contact-footer {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body.light-mode .footer-title {
+  background: linear-gradient(90deg, #003049, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .contact-item a {
+  color: #0077b6;
+}
+
+body.light-mode .contact-item a:hover {
+  color: #005b88;
+}
+
+body.light-mode .footer-note {
+  color: #666;
+}
+@media screen and (max-width: 600px) {
+  .footer-note {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+    position: relative;
+    left: 0;
+  }
+}
