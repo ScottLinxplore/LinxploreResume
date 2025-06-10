@@ -139,7 +139,7 @@ body.light-mode .toggle-label {
   .toggle-wrapper {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    top: -6rem;
+    top: -8rem;
     left: 15vw;
     width: 50vw;
   }
