@@ -131,7 +131,7 @@ body.light-mode .toggle-label {
 }
 @media screen and (max-width: 400px) and (min-width: 381px) {
   .LightSwitcherSection {
-    top: -8vh;
+    top: -7.5vh;
     left: 11vw;
     position: relative;
     width: 30vw;
