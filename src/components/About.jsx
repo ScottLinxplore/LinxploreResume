@@ -1,6 +1,6 @@
 // src/components/About.jsx
 import "./css/About.css";
-import HPSme from "./image/HPSme.jpg";
+import HPSMe from "./image/HPSMe.jpg";
 import RUN from "./image/run.jpg";
 import SnowMountain from "./image/snowMaintainMe.jpg";
 import Surf from "./image/surf.jpg";
@@ -93,7 +93,7 @@ function About() {
   const moodBoardArray = [
     RUN,
     Surf,
-    HPSme,
+    HPSMe,
     SnowMountain,
     Hike,
     HPSGroup,

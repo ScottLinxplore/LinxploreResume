@@ -94,7 +94,7 @@ body.light-mode .experience-section {
 
 /* Light Mode：標題漸層 */
 body.light-mode .experience-title {
-  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  background: linear-gradient(90deg, #ff9898, #409fda);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

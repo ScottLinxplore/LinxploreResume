@@ -1,7 +1,7 @@
 import "./css/Light.css";
 function LightSwitcher({ toggleMode, isDark }) {
   return (
-    <div className="LightSwitcherSection" data-aos="fade-up">
+    <div className="LightSwitcherSection fade-slide-right delay-4">
       <label className="toggle-wrapper">
         <input type="checkbox" checked={isDark} onChange={toggleMode} />
         <span className="toggle-slider" />

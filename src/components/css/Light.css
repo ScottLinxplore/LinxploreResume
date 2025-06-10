@@ -62,6 +62,21 @@ body.light-mode .toggle-label {
   font-size: 1rem;
   font-family: Arial, sans-serif;
 }
+.fade-slide-right {
+  transform: translateX(30px);
+}
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
 /* 11111 */
 /* 11111 */
 /* 11111 */
@@ -114,7 +129,7 @@ body.light-mode .toggle-label {
     width: 6rem;
   }
 }
-@media screen and (max-width: 414px) and (min-width: 381px) {
+@media screen and (max-width: 400px) and (min-width: 381px) {
   .LightSwitcherSection {
     top: -8vh;
     left: 11vw;
@@ -124,7 +139,7 @@ body.light-mode .toggle-label {
   .toggle-wrapper {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    top: 0;
+    top: -9rem;
     left: 15vw;
     width: 50vw;
   }
@@ -136,7 +151,7 @@ body.light-mode .toggle-label {
   body.light-mode .toggle-wrapper {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    top: 57rem;
+    top: 50rem;
     left: 15vw;
   }
   .toggle-label {
@@ -154,7 +169,7 @@ body.light-mode .toggle-label {
   .toggle-wrapper {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    top: 0;
+    top: -3rem;
     left: 15vw;
     width: 50vw;
   }
@@ -174,7 +189,7 @@ body.light-mode .toggle-label {
   }
 }
 
-@media screen and (min-width: 415px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
   /* CSS rules for screens between 400px and 600px */
   .LightSwitcherSection {
     top: -16vh;
@@ -190,7 +205,7 @@ body.light-mode .toggle-label {
     width: 50vw;
   }
   body.light-mode .LightSwitcherSection {
-    top: -20rem;
+    top: -22rem;
     position: absolute;
     left: 8vw;
   }

@@ -82,7 +82,7 @@ body.light-mode .skills-section {
 
 /* Light Mode：標題漸層 */
 body.light-mode .skills-title {
-  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  background: linear-gradient(90deg, #ff9898, #409fda);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

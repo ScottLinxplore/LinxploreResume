@@ -146,7 +146,7 @@ body.light-mode .about-section {
 
 /* Light Mode：標題漸層調整 */
 body.light-mode .about-title {
-  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  background: linear-gradient(90deg, #ff9898, #409fda);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -188,7 +188,7 @@ body.light-mode .carousel-section {
 }
 
 body.light-mode .carousel-title {
-  background: linear-gradient(90deg, #ff9898, #2f2f2f);
+  background: linear-gradient(90deg, #ff9898, #409fda);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
