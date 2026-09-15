@@ -112,14 +112,12 @@ function About() {
         <div className="flip-card">
           <div className="flip-inner">
             <div className="flip-front">
-              <p className="card-title">專案經驗與實戰能力</p>
-              <p className="card-sub">專案實作 × 前端整合</p>
+              <p className="card-title">產品設計與專案實務</p>
+              <p className="card-sub">設計開發 × 工程整合</p>
             </div>
             <div className="flip-back">
               <p>
-                曾參與 Google HPS
-                計畫，與多元團隊合作開發具教育性的智慧垃圾分類系統，負責 UI/UX
-                與前端整合實作。今年初於資策會參加前端工程師養成班，擔任「朝聖之路」專案組長，主導「路線規劃模組」的功能設計與技術開發，並協調團隊進度。
+                目前於廣達電腦擔任產品設計相關職務，參與消費性電子產品開發，涵蓋前期設計提案、3D CAD、CMF、樣品確認及試產量產等階段。實務中與機構、專案團隊及供應商協作，在設計品質、製造條件與專案需求之間尋找合適的解決方案。
               </p>
             </div>
           </div>
