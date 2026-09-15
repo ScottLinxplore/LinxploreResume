@@ -3,24 +3,26 @@ import { useState } from "react";
 import "./css/Skills.css";
 
 const allSkills = [
+ 
+  { name: "Creo Pro E", category: "design" },
+  { name: "Solidworks", category: "design" },
+  { name: "Illustrator", category: "design" },
+  { name: "Photoshop", category: "design" },
+  { name: "KeyShot", category: "design" },
+  { name: "Rhino", category: "design" },
+  { name: "Figma", category: "interactiondesign" },
+  { name: "Unity", category: "interactiondesign" },
   { name: "HTML", category: "frontend" },
   { name: "CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
   { name: "React", category: "frontend" },
-  { name: "Restful API", category: "frontend" },
-  { name: "Figma", category: "design" },
-  { name: "Illustrator", category: "design" },
-  { name: "Photoshop", category: "design" },
-  { name: "Rhino", category: "design" },
-  { name: "Unity", category: "design" },
-  { name: "KeyShot", category: "design" },
-  { name: "Solidworks", category: "design" },
-  { name: "Creo Pro E", category: "design" },
+  { name: "Restful API", category: "frontend" }
 ];
 
 const categories = [
-  { key: "frontend", label: "前端開發" },
   { key: "design", label: "產品設計" },
+  { key: "interactiondesign", label: "互動設計" },
+  { key: "frontend", label: "前端開發" }
 ];
 
 function Skills() {
