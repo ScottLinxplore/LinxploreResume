@@ -22,7 +22,13 @@ const projects = [
     image: HPS,
     URL: "https://drive.google.com/drive/folders/1RATGdxEWHElwR9tDo6i2EX9VmHfSugW6",
   },
-  
+  {
+    title: "離岸風電模擬訓練系統（嚴肅遊戲）",
+    description:
+      "本專案是一款專為離岸風力發電維修人員設計的模擬訓練系統，採用「嚴肅遊戲（Serious Game）」概念，結合 Unity3D 互動模擬技術，建立出仿真的高空維修情境，以提升維修人員在實務前的心理建設、應變判斷與安全意識。",
+    image: WAH,
+    URL: "https://drive.google.com/drive/folders/1MkGXg1mMMtAzTzu-KR4Jkmoy3HXDSRKG",
+  },
   {
     title: "朝聖之路｜路線規劃模組",
     description:
@@ -37,13 +43,7 @@ const projects = [
     image: LinxploreCamino,
     URL: "https://github.com/ScottLinxplore/Camino?tab=readme-ov-file",
   },
-  {
-    title: "離岸風電模擬訓練系統（嚴肅遊戲）",
-    description:
-      "本專案是一款專為離岸風力發電維修人員設計的模擬訓練系統，採用「嚴肅遊戲（Serious Game）」概念，結合 Unity3D 互動模擬技術，建立出仿真的高空維修情境，以提升維修人員在實務前的心理建設、應變判斷與安全意識。",
-    image: WAH,
-    URL: "https://drive.google.com/drive/folders/1MkGXg1mMMtAzTzu-KR4Jkmoy3HXDSRKG",
-  },
+  
 ];
 
 function Projects() {
