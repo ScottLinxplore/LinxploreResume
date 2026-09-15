@@ -3,6 +3,7 @@ import "./css/Projects.css";
 import Steplygo1 from "./image/steplygo1-1.jpg";
 import LinxploreCamino from "./image/linxploreCamino.jpg";
 import HPS from "./image/HPS.jpg";
+import EZGOIF from"./image/EZGOIF.png";
 import WAH from "./image/WAH.png";
 import Pickup from "./image/pickup.png";
 const projects = [
@@ -11,7 +12,7 @@ const projects = [
     title: "EZGO｜多功能無障礙電動輔具",
     description:
       "針對行動不便者在不同生活情境中需要使用多種輔具的問題，設計整合電動輪椅、助行器、拐杖與步行訓練等四種功能的移動輔具。透過使用情境分析、產品機構與型態整合，讓使用者能依不同環境切換使用模式，提升室內外自主移動的彈性。本專案獲得 2021 iF Design Talent Award。",
-    image: HPS,
+    image: EZGOIF,
     URL: "https://ifdesign.com/en/winner-ranking/project/ezgo/319553",
   },
 
