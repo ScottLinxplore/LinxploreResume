@@ -7,18 +7,11 @@ const allSkills = [
   { name: "CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
   { name: "React", category: "frontend" },
-  { name: "Axios", category: "frontend" },
   { name: "Restful API", category: "frontend" },
   { name: "Figma", category: "design" },
   { name: "Illustrator", category: "design" },
   { name: "Photoshop", category: "design" },
   { name: "Rhino", category: "design" },
-  { name: "MySQL", category: "database" },
-  { name: "Neon", category: "database" },
-  { name: "phpMyAdmin", category: "database" },
-  { name: "NodeJs", category: "backend" },
-  { name: "PHP", category: "backend" },
-  { name: "Jquery", category: "frontend" },
   { name: "Unity", category: "design" },
   { name: "KeyShot", category: "design" },
   { name: "Solidworks", category: "design" },
@@ -26,10 +19,8 @@ const allSkills = [
 ];
 
 const categories = [
-  { key: "frontend", label: "前端" },
-  { key: "backend", label: "後端" },
-  { key: "database", label: "資料庫" },
-  { key: "design", label: "設計" },
+  { key: "frontend", label: "前端開發" },
+  { key: "design", label: "產品設計" },
 ];
 
 function Skills() {
