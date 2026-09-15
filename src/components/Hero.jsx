@@ -69,9 +69,9 @@ function Hero({ isDark }) {
           }}
         >
           <div className="hero-tags fade-slide-right delay-4">
-            <p>Front end Developer</p>
+            <p>Industrial Design</p>
             <br />
-            <p>UI/UX Designer</p>
+            <p>Engineering</p>
           </div>
         </div>
       </div>
