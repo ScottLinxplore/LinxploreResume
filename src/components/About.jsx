@@ -126,14 +126,12 @@ function About() {
         <div className="flip-card">
           <div className="flip-inner">
             <div className="flip-front">
-              <p className="card-title">個人品牌與未來方向</p>
-              <p className="card-sub">持續精進 × 體驗優化</p>
+              <p className="card-title">生活經驗與設計觀察</p>
+              <p className="card-sub">戶外探索 × 使用情境</p>
             </div>
             <div className="flip-back">
               <p>
-                獨立開發 Linxplore 互動旅遊網站，從設計構思到 RWD
-                前端實作全程參與，實踐完整產品流程。未來希望加入重視體驗與品質的團隊，擔任前端工程師或
-                UI/UX 設計師，打造更有溫度的產品體驗。
+                工作之外，我長期接觸登山、溯溪、露營、潛水、衝浪、釣魚與跑步等戶外活動。不同環境中的實際體驗，讓我更習慣觀察使用者行為、操作細節、環境限制與產品的真實使用方式，也讓這些生活經驗逐漸成為我理解問題與思考設計的重要養分。
               </p>
             </div>
           </div>
