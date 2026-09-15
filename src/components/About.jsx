@@ -105,8 +105,7 @@ function About() {
     <section id="about" className="about-section" data-aos="fade-up">
       <h2 className="about-title">關於我</h2>
       <p className="about-description">
-        您好，我是林敬庭，畢業於成功大學工業設計研究所。原本來自觀光背景，自學轉設計，大學至研究所期間完成跨域轉換，培養了設計與前端整合能力。我熟悉使用者研究、資訊架構與互動設計，並能以
-        React.js、HTML /CSS/ JavaScript 實作 UI 介面，有效協助設計落地。
+        您好，我是林敬庭，畢業於成功大學工業設計研究所，目前任職於廣達電腦產品設計部門，參與消費性電子產品從設計提案、3D CAD、CMF 到試產與量產階段的產品開發。我喜歡從實際使用情境觀察產品與人的關係，並將設計思考延伸至工程、製造與數位工具。除了產品設計，我也具備前端開發經驗，並嘗試透過程式與自動化工具改善設計流程，持續探索設計與技術之間更多可能。
       </p>
 
       <div className="card-grid">
