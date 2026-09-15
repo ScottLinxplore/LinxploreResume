@@ -6,6 +6,23 @@ import HPS from "./image/HPS.jpg";
 import WAH from "./image/WAH.png";
 import Pickup from "./image/pickup.png";
 const projects = [
+
+  {
+    title: "EZGO｜多功能無障礙電動輔具",
+    description:
+      "針對行動不便者在不同生活情境中需要使用多種輔具的問題，設計整合電動輪椅、助行器、拐杖與步行訓練等四種功能的移動輔具。透過使用情境分析、產品機構與型態整合，讓使用者能依不同環境切換使用模式，提升室內外自主移動的彈性。本專案獲得 2021 iF Design Talent Award。",
+    image: HPS,
+    URL: "https://ifdesign.com/en/winner-ranking/project/ezgo/319553",
+  },
+
+  {
+    title: "Google HPS 專案",
+    description:
+      "教育互動系統，負責 UI/UX 與前端整合，開發具互動教育的智慧垃圾分類裝置GREENIFY，從 UI/UX 流程設計到 React 前端實作，參與後台硬體、AI 與動畫引導。聚焦於提升環保教育的參與感與實性，於 HPS 計畫成果發表中展示。",
+    image: HPS,
+    URL: "https://drive.google.com/drive/folders/1RATGdxEWHElwR9tDo6i2EX9VmHfSugW6",
+  },
+  
   {
     title: "朝聖之路｜路線規劃模組",
     description:
@@ -19,20 +36,6 @@ const projects = [
       "獨立開發，強調互動與完整產品流程。本專案是一個專為西班牙朝聖之路（Camino de Santiago）設計的旅遊行程規劃與套裝販售平台，並選購推薦的朝聖行程與服務。目標是提升自由行旅客在行前、行中、行後的資訊取得與體驗品質。",
     image: LinxploreCamino,
     URL: "https://github.com/ScottLinxplore/Camino?tab=readme-ov-file",
-  },
-  {
-    title: "Google HPS 專案",
-    description:
-      "教育互動系統，負責 UI/UX 與前端整合，開發具互動教育的智慧垃圾分類裝置GREENIFY，從 UI/UX 流程設計到 React 前端實作，參與後台硬體、AI 與動畫引導。聚焦於提升環保教育的參與感與實性，於 HPS 計畫成果發表中展示。",
-    image: HPS,
-    URL: "https://drive.google.com/drive/folders/1RATGdxEWHElwR9tDo6i2EX9VmHfSugW6",
-  },
-  {
-    title: "Pickup校園共乘交友軟體",
-    description:
-      "Pick Up 是一款專為校園打造的共乘交友應用程式，旨在解決機車停車位不足的問題。針對多數大學生擁有通勤機車、導致校園車位短缺的情況，Pick Up 結合配對機制與共乘功能，鼓勵學生共享通勤。使用者可設定每日上學路線，系統將自動推薦路線相近的同學進行配對，促進校內共乘與交流風氣。",
-    image: Pickup,
-    URL: "https://www.figma.com/proto/JHkroJ4RE0lZhBetB6Qfqd/Untitled?type=design&node-id=1-3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&show-proto-sidebar=1",
   },
   {
     title: "離岸風電模擬訓練系統（嚴肅遊戲）",
