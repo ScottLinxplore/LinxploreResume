@@ -26,7 +26,7 @@ function Contact() {
             <span>{contactInfo.lineID}</span>
           </div>
         </div>
-        <p className="footer-note">© 2025 Lin Jingtin. All rights reserved.</p>
+        <p className="footer-note">© 2026 Lin Jingtin. All rights reserved.</p>
       </div>
     </footer>
   );
