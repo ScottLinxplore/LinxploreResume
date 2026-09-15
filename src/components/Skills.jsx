@@ -15,8 +15,7 @@ const allSkills = [
   { name: "HTML", category: "frontend" },
   { name: "CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
-  { name: "React", category: "frontend" },
-  { name: "Restful API", category: "frontend" }
+  { name: "React", category: "frontend" }
 ];
 
 const categories = [
